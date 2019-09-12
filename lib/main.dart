@@ -26,13 +26,13 @@ class HomePage extends StatelessWidget {
             decoration: BoxDecoration(
               image: DecorationImage(
                 image: NetworkImage(
-                    'https://images.unsplash.com/photo-1517030330234-94c4fb948ebc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1275&q=80'),
+                    'https://assets.imgix.net/setup/serving-swimmer.jpg'),
                 fit: BoxFit.cover,
               ),
             ),
             child: Center(
               child: Text(
-                'mrflutter.com',
+                'Welcome',
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 30,
@@ -42,12 +42,13 @@ class HomePage extends StatelessWidget {
           ),
           Positioned(
             child: AppBar(
+              centerTitle: true,
               title: Text("Transparent AppBar"),
               backgroundColor: Colors.transparent,
               elevation: 0,
               actions: <Widget>[
                 IconButton(
-                  icon: Icon(Icons.share),
+                  icon: Icon(Icons.add),
                   onPressed: () {},
                   tooltip: 'Share',
                 ),
