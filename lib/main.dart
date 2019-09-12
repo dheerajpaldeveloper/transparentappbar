@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:gradient_app_bar/gradient_app_bar.dart';
-
 void main() => runApp(MyApp());
-
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -16,7 +13,6 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
 class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
